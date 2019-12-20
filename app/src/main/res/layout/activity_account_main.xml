@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.AccountMain">
+
+
+    <FrameLayout
+        android:id="@+id/acc_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="?attr/fragBack"
+        app:layout_constraintBottom_toTopOf="@id/main_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/main_img"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:src="#00ffff22"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    />
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/main_spaceView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:active_item_color="?attr/spaceSelected"
+        app:centre_button_color="#000000"
+        app:centre_button_icon="@drawable/baseline_camera_alt_black_48"
+        app:inactive_item_color="?attr/spaceItem"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:space_background_color="?attr/fragBack"
+        app:space_item_icon_only_size="@dimen/space_item_icon_only_size">
+
+
+    </com.luseen.spacenavigation.SpaceNavigationView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

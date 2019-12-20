@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.Fragments.SearchFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/fragBack">
+
+
+        <Toolbar
+            android:id="@+id/searchFrag_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?attr/actioncolor"
+            android:title="Search"
+            android:titleTextColor="?attr/textcolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></Toolbar>
+
+
+        <View
+            android:id="@+id/searchFrag_view"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="?attr/viewcolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchFrag_toolbar" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/searchFrag_txtlayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:textColorHint="?attr/textcolor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchFrag_view">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/searchFrag_ed1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search By Name"
+                android:padding="8dp"
+                android:textColor="?attr/textcolor"
+                android:textColorHint="?attr/textcolor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/searchFrag_recycler"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchFrag_txtlayout"></androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
