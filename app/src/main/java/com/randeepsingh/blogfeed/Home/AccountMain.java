@@ -18,6 +18,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.luseen.spacenavigation.SpaceItem;
 import com.luseen.spacenavigation.SpaceNavigationView;
 import com.luseen.spacenavigation.SpaceOnClickListener;
+import com.rahulgaur.utils.Utils;
 import com.randeepsingh.blogfeed.Home.Fragments.SearchFragment;
 import com.randeepsingh.blogfeed.Home.Fragments.homeFragment;
 import com.randeepsingh.blogfeed.Home.Fragments.notifFragment;
@@ -64,6 +65,8 @@ public class AccountMain extends AppCompatActivity {
                 }
             }
         });
+
+
 
         Log.e("checkey", "acc main onCreate: ");
 
